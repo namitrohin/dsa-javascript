@@ -2,15 +2,15 @@ class Solution {
   merge(arr, left, mid, right) {
     const n1 = mid - left + 1;
     const n2 = right - mid;
-
     // Create temp arrays
     const L = new Array(n1);
     const R = new Array(n2);
-
     // Copy data to temp arrays L[] and R[]
     for (let i = 0; i < n1; i++) L[i] = arr[left + i];
     for (let j = 0; j < n2; j++) R[j] = arr[mid + 1 + j];
 
+
+    
     let i = 0,
       j = 0;
     let k = left;
